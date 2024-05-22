@@ -1,25 +1,64 @@
-/node_modules
-/coverage
-/cli
-/lib
-/peers
-/example
-.vscode
+*.swp
+*.swo
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+allFiredEvents
+scTopics
+
+# Coverage directory used by tools like istanbul
+coverage
+coverage.json
+coverageEnv
+
+# node-waf configuration
+.lock-wscript
+
+# Dependency directory
+node_modules
+
+# Debug log from npm
+npm-debug.log
+
+# local env variables
+.env
+
+# truffle build directory
+build/
+
+# macOS
 .DS_Store
-.parcel-cache
-tailwind.config.js
-index.html
-yarn.lock
-yarn-error.log
-types/generated/*.d.ts
 
-.turbo
+# truffle
+.node-xmlhttprequest-*
 
-# Perf related files
-isolate*.log
+# IntelliJ IDE
+.idea
 
-# Generated files
-/src/corePluginList.js
+# docs artifacts
+docs/modules/api
 
-# Generated files during tests
-/tests/evaluate-tailwind-functions.test.html
+# only used to package @openzeppelin/contracts
+contracts/build/
+contracts/README.md
+
+# temporary artifact from solidity-coverage
+allFiredEvents
+.coverage_artifacts
+.coverage_cache
+.coverage_contracts
+
+# hardhat
+cache
+artifacts
+
+# Certora
+.certora*
+.last_confs
+certora_*

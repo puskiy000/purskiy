@@ -1,11 +1,20 @@
-<!--
+<!-- Thank you for your interest in contributing to OpenZeppelin! -->
 
-👋 Hey, thanks for your interest in contributing to Tailwind!
+<!-- Consider opening an issue for discussion prior to submitting a PR. -->
+<!-- New features will be merged faster if they were first discussed and designed with the team. -->
 
-**Please ask first before starting work on any significant new features.**
+Fixes #???? <!-- Fill in with issue number -->
 
-It's never a fun experience to have your pull request declined after investing a lot of time and effort into a new feature. To avoid this from happening, we request that contributors create an issue to first discuss any significant new features. This includes things like adding new utilities, creating new at-rules, or adding new component examples to the documentation.
+<!-- Describe the changes introduced in this pull request. -->
+<!-- Include any context necessary for understanding the PR's purpose. -->
 
-https://github.com/tailwindcss/tailwindcss/blob/master/.github/CONTRIBUTING.md
 
--->
+#### PR Checklist
+
+<!-- Before merging the pull request all of the following must be complete. -->
+<!-- Feel free to submit a PR or Draft PR even if some items are pending. -->
+<!-- Some of the items may not apply. -->
+
+- [ ] Tests
+- [ ] Documentation
+- [ ] Changelog entry
