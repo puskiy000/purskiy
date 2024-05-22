@@ -1,24 +1,21 @@
 {
-  "$schema": "https://turborepo.org/schema.json",
-  "baseBranch": "origin/develop",
+  "$schema": "https://turbo.build/schema.json",
   "pipeline": {
-    "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**"]
+    "//#build": {
+      "outputs": ["lib/**", "types/generated/**"],
+      "inputs": ["src/**", "oxide/**", "nesting/**", "oxide-node-api-shim/**", "types/**"]
     },
     "test": {
-      "outputs": ["coverage/**"],
-      "dependsOn": []
+      "env": ["OXIDE"],
+      "dependsOn": ["//#build"]
     },
-    "lint": {
-      "outputs": []
+    "//#test": {
+      "env": ["OXIDE"],
+      "dependsOn": ["//#build"],
+      "inputs": ["tests/**"]
     },
-    "dev": {
-      "cache": false
-    },
-    "integration-test": {
-      "outputs": [],
-      "inputs": ["cypress/integration/**.test.ts"]
+    "//#style": {
+      "inputs": ["**/*.js", "**/*.ts"]
     }
   }
 }
