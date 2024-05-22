@@ -1,20 +1,15 @@
 # Security Policy
 
-## Bug Bounty
-
-We have a [**bug bounty program** on Immunefi](https://www.immunefi.com/bounty/openzeppelin). Please report any security issues you find through the Immunefi dashboard, or reach out to security@openzeppelin.com.
-
-Critical bug fixes will be backported to past major releases.
-
 ## Supported Versions
 
-The recommendation is to use the latest version available.
+Only the latest version is supported with security updates.
 
-| Version | Supported                            |
-| ------- | ------------------------------------ |
-| 4.x     | :white_check_mark::white_check_mark: |
-| 3.4     | :white_check_mark:                   |
-| 2.5     | :white_check_mark:                   |
-| < 2.0   | :x:                                  |
+## Reporting a Vulnerability
 
-Note that the Solidity language itself only guarantees security updates for the latest release.
+Please [contact support](https://raw.githubusercontent.com/laurent22/joplin/dev/Assets/AdresseSupport.png) **with a proof of concept** that shows the security vulnerability. Please do not contact us without this proof of concept, as we cannot fix anything without this.
+
+For general opinions on what makes an app more or less secure, please use the forum.
+
+## Bounty
+
+We **do not** offer a bounty for discovering vulnerabilities, please do not ask. We can however credit you and link to your website in the changelog and release announcement.
