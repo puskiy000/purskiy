@@ -1,48 +1,72 @@
-# So you want to contribute!
+# Contributing to the Pancake ecosystem 🥞
 
-Thanks for helping out the community! We are actively looking for contributors and maintainers so you are more than welcome.
+Thanks for taking the time to contribute !
+You can start by reading our [Contribution guidelines](https://docs.pancakeswap.finance/code/contributing) first.
 
-I thought I should lay out some core principles that we will follow so that this repo doesn't get too wild and lose its value.
+## Setup
 
-1. **We are a CHEATSHEET above all**: all examples to be as simple as possible, easily searched, and presented for copy-and-paste.
-2. **Collapsible explanations**: No more than 1-2 sentences of explanation, any more than that we put inside `details` tags.
-3. **React + TypeScript ONLY**: React's ecosystem is huge, we can't possibly cover it all. This includes Redux. Would encourage people to maintain separate lists for stuff like React + Apollo Graphql, for example. Also we make no attempt to convince people to use TypeScript, we only exist to help people who have already decided to try it out.
-4. **Add TypeScript Playground Links**: Whenever adding a code example longer than four lines, add a link to the TypeScript Playground with the code. Use the default compiler Playground options.
+Install the dependencies
 
-That's all I've got! Again, really happy you are thinking about helping out, who knows, the person who you might be helping is yourself in future!
+```shell
+yarn
+yarn dev
+```
+
+Don't forget to setup your IDE with `eslint` and `prettier`.
 
 ## Project structure
 
-- All content is in `/docs`
-  - the `/docs/basic` is compiled into `README.md` to preserve GitHub readability via GitHub action, thanks
-- `/website` consumes the `/docs` content, which is a [Docusaurus 2](https://docusaurus.io/) site, which also has [Algolia search](https://www.algolia.com/) (thanks to both teams for their support!)
+- **components** contains generic components used inside the application.
+- **views** contains building blocks for each page. The entry point of a view is used as the root component of each route.
+- **config** contains all the config files and ABIs.
+- **state** contains the redux files for the global state of the app.
+- **context** contains global contexts (separated from the redux store)
+- **hooks** contains generic hooks.
+- **utils** contains generic utilities functions.
+- **pages** contains page components for next.js
 
-The website is deployed to Netlify on swyx's personal account.
+## Tests
 
-To run the docsite locally:
+Run tests with `yarn test`.
 
-```bash
-yarn # install deps
-## make sure deps are installed in /website too
-cd website && yarn start
+## Issue reports
+
+A bug is a _demonstrable problem_ that is caused by the code in the repository.
+Good bug reports are extremely helpful - thank you!
+
+Guidelines for bug reports:
+
+1. **Use the GitHub issue search** &mdash; check if the issue has already been
+   reported.
+
+2. **Check if the issue has been fixed** &mdash; try to reproduce it using the
+   latest `master` or development branch in the repository.
+
+3. **Isolate the problem** &mdash; create a [reduced test
+   case](http://css-tricks.com/reduced-test-cases/) and a live example.
+
+4. **Add attachments** &mdash; add photos or videos
+
+A good bug report shouldn't leave others needing to chase you up for more
+information. Please try to be as detailed as possible in your report. What is
+your environment? What steps will reproduce the issue? What browser(s) and OS
+experience the problem? What would you expect to be the outcome? All these
+details will help people to fix any potential bugs.
+
+Template:
+
+```
+**Environment:**
+Device and OS:
+Browser:
+Reproducibility rate:
+
+**Steps to reproduce:**
+1.
+2.
+3.
+
+**Expected result:**
 ```
 
-example output from successful startup
-
-```
-yarn run v1.22.4
-warning package.json: No license field
-$ docusaurus start
-Starting the development server...
-
-✔ Client
-  Compiled successfully in 9.61s
-
-ℹ ｢wds｣: Project is running at http://localhost:3000/
-ℹ ｢wds｣: webpack output is served from /
-ℹ ｢wds｣: Content not from webpack is served from /Users/wanshawn/Work/react-typescript-cheatsheet/website
-ℹ ｢wds｣: 404s will fallback to /index.html
-
-✔ Client
-  Compiled successfully in 116.41ms
-```
+A good bug report shouldn't leave others needing to chase you up for more.
