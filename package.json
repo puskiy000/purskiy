@@ -1,33 +1,50 @@
 {
-  "name": "cra-minimal-jsx",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+  "name": "@creative-tim-official/argon-dashboard",
+  "version": "2.0.4",
+  "description": "Freebie Dashboard for Bootstrap 5",
+  "main": "pages/dashboard.html",
+  "directories": {
+    "example": "root"
   },
   "scripts": {
-    "git-update": "git fetch && git pull",
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "open-app": "gulp open-app",
+    "start": "npm run open-app",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp-watch"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativetimofficial/argon-dashboard.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "keywords": [
+    "argon dashboard",
+    "bootstrap 5",
+    "dashboard",
+    "creative tim",
+    "html dashboard",
+    "html css dashboard",
+    "web dashboard",
+    "freebie",
+    "free bootstrap dashboard",
+    "css3 dashboard",
+    "bootstrap dashboard",
+    "frontend",
+    "responsive bootstrap dashboard"
+  ],
+  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/argon-dashboard/issues"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-install": "^1.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-open": "^3.0.1",
+    "sass": "^1.49.9"
+  },
+  "homepage": "https://creative-tim.com/product/argon-dashboard"
 }
